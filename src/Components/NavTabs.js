@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import resume from '../assets/mvaughn_full-stack-resume.pdf';
+import { deepPurple } from '@mui/material/colors';
 import './css/NavBar.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
@@ -53,10 +54,10 @@ function NavTabs({ currentPage, handlePageChange }) {
                             <span className="nav-text" >
                                 <div className="social-icon">
                                     <a href="https://github.com/Meljska-Fawn">
-                                        <GitHubIcon fontSize="large" />
+                                        <GitHubIcon fontSize="large" sx={{ color: deepPurple[500] }}/>
                                     </a>
                                     <a href="https://www.linkedin.com/in/melissa-vaughn-663b35226/">
-                                        <LinkedInIcon fontSize="large" />
+                                        <LinkedInIcon fontSize="large" sx={{ color: deepPurple[500] }}/>
                                     </a>
                                 </div>
                                 <a href={resume} target="_blank" rel="noreferrer"><button className='nav-button'>Download CV</button></a>

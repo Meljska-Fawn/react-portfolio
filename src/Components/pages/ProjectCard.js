@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Card from 'react-bootstrap/Card';
+import { deepPurple } from '@mui/material/colors';
 
 export default function ProjectCard({project}) {
     const [hover, setHover] = useState(false);
@@ -16,7 +17,7 @@ export default function ProjectCard({project}) {
                 <Card.Body>
                     <Card.Title className="">
                         {project.title}<Card.Link href={project.github} className="dark-link">
-                            <GitHubIcon />
+                            <GitHubIcon sx={{ color: deepPurple[500] }} />
                         </Card.Link>
                     </Card.Title>
                 </Card.Body>

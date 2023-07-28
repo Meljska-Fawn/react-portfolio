@@ -5,12 +5,19 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import SatelliteIcon from '@mui/icons-material/Satellite'; import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
+import Lottie from 'react-lottie';
+import animationData from '../../assets/animation_lk1q6wwx.json';
 
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+    }
+};
 
 export default function Contact() {
     // Here we set two state variables for firstName and lastName using `useState`
@@ -55,49 +62,41 @@ export default function Contact() {
     };
 
     return (
-        <Container>
-            <Row className="fluid mt-5 d-flex align-items-center">
-                <Col xs={12} md={6} className="mb-3">
-                    <Row>
-                        <Col className="col-1"><SatelliteIcon fontSize="large" /></Col>
-                        <Col className="col-11">
-                            <h4>Location</h4>
-                            <p>White Salmon, Washington</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col className="d-flex align-items-right col-1"><ForwardToInboxIcon /></Col>
-                        <Col className="col-11">
-                            <h4>Email</h4>
-                            <p>Meli.explores@gmail.com</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col className="d-flex align-items-right col-1"><PhonelinkRingIcon /></Col>
-                        <Col className="col-11">
-                            <h4>Phone</h4>
-                            <p>+1540.819.4352</p>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col xs={12} md={6} className="">
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexWrap: 'wrap',
-                            '& > :not(style)': {
-                                m: 1,
-                                width: 500,
-                                height: 450,
-                            },
-                        }}
-                    >
+        <>
+
+            <div className="fixed w-full h-full top-0 left-0 z-[-1]" style={{ opacity: '0.4' }}>
+                <Lottie options={defaultOptions} />
+            </div>
+
+            <div className="my-5">
+                <div className="grid grid-cols-8 lg:gap-4 gap-1 items-center justify-center h-screen">
+                    <div className="lg:col-start-2 lg:col-end-5 md:col-start-2 md:col-end-8 place-self-center col-start-2 col-end-8 my-5 md:mt-2">
+                        <div className="mb-5">
+                            <SatelliteIcon fontSize="large" />
+                            <div className="text-2xl font-bold text-slate-700 my-2">Location</div>
+                            <div className="text-xl text-slate-600 ">White Salmon, Washington</div>
+                        </div>
+
+                        <div className="mb-5">
+                            <ForwardToInboxIcon fontSize="large" />
+                            <div className="text-2xl font-bold text-slate-700 my-2">Email</div>
+                            <div className="text-xl text-slate-600">Meli.explores@gmail.com</div>
+                        </div>
+
+                        <div className="mb-3">
+                            <PhonelinkRingIcon fontSize="large" />
+                            <div className="text-2xl font-bold text-slate-700 my-2">Phone</div>
+                            <div className="text-xl text-slate-600">+1 540.819.4352</div>
+                        </div>
+                    </div>
+
+                    <div className="contactBox my-4 lg:col-start-5 lg:col-end-8 md:col-start-2 md:col-end-8 col-start-1 col-end-9">
                         <Paper elevation={3}>
-                            <div className="p-3">
-                                <h2>Let's Connect</h2>
+                            <div className="p-3 font-bold text-center text-slate-700 leading-snug md:text-5xl text-4xl">
+                                Let's Connect!
                             </div>
                             <form className="form">
-                                <div className="px-3">
+                                <div className="px-4">
                                     <TextField
                                         fullWidth label="Full Name"
                                         id="fullWidth"
@@ -109,7 +108,7 @@ export default function Contact() {
                                         type="text"
                                     />
                                 </div>
-                                <div className="p-3">
+                                <div className="p-4">
                                     <TextField
                                         fullWidth label="Email"
                                         id="fullWidth"
@@ -121,7 +120,7 @@ export default function Contact() {
                                         type="email"
                                     />
                                 </div>
-                                <div className="px-3">
+                                <div className="px-4">
                                     <TextField
                                         id="standard-multiline-static"
                                         fullWidth label="Type your message here"
@@ -135,8 +134,9 @@ export default function Contact() {
                                         type="text"
                                     />
                                 </div>
-                                <div className="p-3">
-                                    <Button onClick={handleFormSubmit} type="button" variant="contained" endIcon={<SendIcon />}>Send</Button>
+                                <div className="p-4">
+                                    <Button onClick={handleFormSubmit} type="button" variant="contained" 
+                                    color="secondary" endIcon={<SendIcon />}>Send</Button>
                                 </div>
                             </form>
                         </Paper>
@@ -145,9 +145,9 @@ export default function Contact() {
                                 <p className="error-text">{errorMessage}</p>
                             </div>
                         )}
-                    </Box>
-                </Col>
-            </Row>
-        </Container >
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
