@@ -4,8 +4,16 @@
 
 
 @layer components {
+.main-project-title{
+  @apply sm:my-2 text-5xl sm:text-5xl font-bold text-slate-700 leading-snug
+}
+
+.main-project-text{
+  @apply text-base sm:text-xl text-slate-700
+}
+
 .project-title{
-  @apply sm:my-2 text-2xl sm:text-4xl font-bold text-slate-700 leading-snug
+  @apply my-5 text-2xl sm:text-3xl font-bold text-slate-700 leading-snug
 }
 
 .project-text{

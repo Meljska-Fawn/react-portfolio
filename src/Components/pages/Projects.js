@@ -8,6 +8,9 @@ import Bloom from '../../images/bloom.png';
 import WeatherGif from '../../images/weather-dashboard.gif';
 import JobGif from '../../images/jobstable_course.gif';
 import MindGif from '../../images/mindful-cal-c.gif';
+import JobImg from '../../images/jobstacle.png';
+import techBlogImg from '../../images/tech-blog-photo.png';
+// import MindGif from '../../images/mindful-cal-c.gif';
 
 
 const defaultOptions = {
@@ -30,28 +33,30 @@ export default function Projects() {
             </div>
 
             <div className="grid grid-cols-6 gap-4 mt-5">
-                <div className="col-start-2 col-end-6 mt-5">
+                <div className="md:col-start-2 md:col-end-6 col-start-1 col-end-7 px-3 md:px-1 mt-5">
                     <img className="w-full rounded mt-5" src={Bloom} alt="" />
                 </div>
-                <div className="col-start-2 col-end-3">
-                    <div className="project-title">Bloom  <a href='https://github.com/Meljska-Fawn/bloom' target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" sx={{ color: deepPurple[500] }} /></a></div>
+                <div className="md:col-start-2 md:col-end-3 col-start-1 col-end-6 px-5 md:px-1">
+                    <div className="main-project-title">Bloom  <a href='https://github.com/Meljska-Fawn/bloom' target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" sx={{ color: deepPurple[500] }} /></a></div>
                 </div>
-                <div className="col-start-3 col-end-6 project-text">
-                    Bloom is a site dedicated to taking the guesswork out of reducing your individual carbon footprint. It provides tools for calculating individual or combined carbon emissions, comparing them to averages, and making voluntary donations to environmental organizations to balance carbon emissions. The site also offers current air quality and temperature information, educational resources such as infographics and news articles, and an AI-powered chatbot called Bloom GPT for in-depth inquiries related to climate change.
+                <div className="md:col-start-3 md:col-end-6 col-start-1 col-end-7 px-5 md:px-1">
+                    <div className="my-2 text-base sm:text-xl font-bold text-slate-700">Bloom is a site dedicated to taking the guesswork out of reducing your individual carbon footprint.</div>
+                    <div className="main-project-text mb-5">It provides tools for calculating individual or combined carbon emissions, comparing them to averages, and making voluntary donations to environmental organizations to offset carbon emissions. The site also offers current air quality and temperature information, educational resources such as infographics and news articles, and an AI-powered chatbot called Bloom GPT for in-depth inquiries related to climate change.
+                    </div>
                 </div>
             </div>
-{/* Jobstacle Course */}
+            {/* Jobstacle Course */}
             <div className="grid grid-cols-8 gap-5 mt-5">
-                <div className="col-start-2 col-end-5 mt-5">
-                    <img className="w-full rounded mt-5" src={JobGif} alt="" />
+                <div className="md:col-start-2 md:col-end-5 col-start-2 col-end-8 mt-5" onMouseOver={() => { setHover(!hover) }}>
+                    <img className="w-full rounded mt-5" src={hover ? JobGif : JobImg} alt="" />
                     <div className="project-title">Jobstacle Course  <a href='https://github.com/Meljska-Fawn/Jobstacle-course' target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" sx={{ color: deepPurple[500] }} /></a></div>
                     <div className="project-text">
                         Bloom is a site dedicated to taking the guesswork out of reducing your individual carbon footprint.  It provides tools for calculating individual or combined carbon emissions, comparing them to averages, and making voluntary donations to environmental organizations to balance carbon emissions.
                     </div>
                 </div>
 
-                <div className="col-start-5 col-end-8 mt-5" onMouseOver={()=>{setHover(!hover)}}>
-                    <img className="w-full rounded mt-5" src={hover ? techBlogGif : Bloom} alt="" />
+                <div className="md:col-start-5 md:col-end-8 col-start-2 col-end-8 mt-5" onMouseOver={() => { setHover(!hover) }}>
+                    <img className="w-full rounded mt-5" src={hover ? techBlogGif : techBlogImg} alt="" />
                     <div className="project-title">Talk Techy to Me  <a href='https://github.com/Meljska-Fawn/talk_techy_to_me' target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" sx={{ color: deepPurple[500] }} /></a></div>
                     <div className="project-text">
                         Bloom is a site dedicated to taking the guesswork out of reducing your individual carbon footprint.  It provides tools for calculating individual or combined carbon emissions, comparing them to averages, and making voluntary donations to environmental organizations to balance carbon emissions.
@@ -60,7 +65,7 @@ export default function Projects() {
             </div>
 
             <div className="grid grid-cols-8 gap-5 mt-5">
-                <div className="col-start-2 col-end-5 mt-5">
+                <div className="md:col-start-2 md:col-end-5 col-start-2 col-end-8 mt-5">
                     <img className="w-full rounded mt-5" src={WeatherGif} alt="" />
                     <div className="project-title">Weather Forecast  <a href='https://github.com/Meljska-Fawn/5-day-weather-forecast' target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" sx={{ color: deepPurple[500] }} /></a></div>
                     <div className="project-text mb-5">
@@ -68,11 +73,11 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className="col-start-5 col-end-8 my-5">
+                <div className="md:col-start-5 md:col-end-8 col-start-2 col-end-8 my-5">
                     <img className="w-full rounded mt-5" src={MindGif} alt="" />
                     <div className="project-title">Mindful (Cal)c  <a href='https://github.com/Meljska-Fawn/mindful-calc-c' target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" sx={{ color: deepPurple[500] }} /></a></div>
-                    <div className="project-text mb-5">
-                        Bloom is a site dedicated to taking the guesswork out of reducing your individual carbon footprint.  It provides tools for calculating individual or combined carbon emissions, comparing them to averages, and making voluntary donations to environmental organizations to balance carbon emissions.
+                    <div className="my-2 text-base sm:text-xl font-bold text-slate-700 mb-5">Bloom is a site dedicated to taking the guesswork out of reducing your individual carbon footprint.</div>
+                    <div className="project-text mb-5">It provides tools for calculating individual or combined carbon emissions, comparing them to averages, and making voluntary donations to environmental organizations to balance carbon emissions.
                     </div>
                 </div>
             </div>
