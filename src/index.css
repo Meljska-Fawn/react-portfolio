@@ -5,7 +5,7 @@
 
 @layer components {
 .main-project-title{
-  @apply sm:my-2 text-5xl sm:text-5xl font-bold text-slate-700 leading-snug
+  @apply my-2 md:my-10 text-4xl md:text-5xl font-bold text-slate-700 leading-snug
 }
 
 .main-project-text{
@@ -13,13 +13,59 @@
 }
 
 .project-title{
-  @apply my-5 text-2xl sm:text-3xl font-bold text-slate-700 leading-snug
+  @apply my-10 text-2xl sm:text-3xl font-bold text-slate-700 leading-snug
 }
 
 .project-text{
   @apply my-2 text-base sm:text-xl text-slate-700
 }
+
+.github-icon{
+  @apply ml-3
 }
+
+.project-button{
+  @apply my-10
+}
+
+.button-style{
+  @apply py-2 px-4 text-white bg-violet-800 font-semibold rounded-lg shadow-lg shadow-white;
+}
+
+.about-lists{
+  @apply mt-2 text-base sm:text-lg text-slate-600
+}
+
+.contact-titles{
+  @apply text-2xl font-bold text-slate-700 my-2
+}
+
+.contact-subtitles{
+  @apply text-2xl text-slate-700
+}
+
+}
+
+/* .button-style{
+  background-color: rgba(104, 7, 123);
+
+} */
+
+.button-style:hover {
+  scale: 1.05;
+}
+
+a.text {
+  text-decoration: none;
+  color: white !important;
+}
+
+Button.contact {
+  background-color: rgb(104, 7, 123);
+  border-radius: 10px 10px 10px 10px;
+  font-weight: 600;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

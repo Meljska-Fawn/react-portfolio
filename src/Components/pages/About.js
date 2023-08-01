@@ -27,7 +27,7 @@ export default function About() {
                 <Lottie options={defaultOptions} />
             </div>
 
-            <div className="my-5">
+            <div className="mt-20 md:my-5">
                 <div className="grid grid-cols-6 gap-4 items-center justify-center h-screen">
                     <div className="md:col-start-2 md:col-end-4 col-start-1 col-end-7 text-6xl sm:text-7xl place-self-center font-bold text-slate-700">
                         HI THERE!<br />
@@ -50,25 +50,25 @@ export default function About() {
                     <div className="md:col-start-2 md:col-end-4 col-start-2 col-end-6">
                         <div className="text-xl font-bold text-slate-700">My favorite technologies to use are...</div>
                         <div className="mt-3">
-                            <div className="mt-2 text-base sm:text-lg text-slate-600">JavaScript</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600">MongoDB</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600">Express.js</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600">React.js</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600">Node.js</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600">GraphQL</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600">MySQL</div>
+                            <div className="about-lists">JavaScript</div>
+                            <div className="about-lists">MongoDB</div>
+                            <div className="about-lists">Express.js</div>
+                            <div className="about-lists">React.js</div>
+                            <div className="about-lists">Node.js</div>
+                            <div className="about-lists">GraphQL</div>
+                            <div className="about-lists">MySQL</div>
                         </div>
                     </div>
                     <div className="md:col-start-4 md:col-end-6 col-start-2 col-end-6">
                         <div className="text-xl font-bold text-slate-700">When I'm not developing, I'm also passionate about...</div>
                         <div className="mt-3 ">
-                            <div className="mt-2 text-base sm:text-lg text-slate-600"><KayakingIcon className="mr-4" />Whitewater Kayaking</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600"><DownhillSkiingIcon className="mr-4" />Skiing</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600"><DirectionsBikeIcon className="mr-4" />Mountain Biking</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600"><FilterHdrIcon className="mr-4" />Rock Climbing</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600"><ShoppingBasketIcon className="mr-4" />Mushroom Foraging</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600"><PhishingIcon className="mr-4" />Fly Fishing</div>
-                            <div className="mt-2 text-base sm:text-lg text-slate-600"><SelfImprovementIcon className="mr-4" />Acro Yoga</div>
+                            <div className="about-lists"><KayakingIcon className="mr-4" />Whitewater Kayaking</div>
+                            <div className="about-lists"><DownhillSkiingIcon className="mr-4" />Skiing</div>
+                            <div className="about-lists"><DirectionsBikeIcon className="mr-4" />Mountain Biking</div>
+                            <div className="about-lists"><FilterHdrIcon className="mr-4" />Rock Climbing</div>
+                            <div className="about-lists"><ShoppingBasketIcon className="mr-4" />Mushroom Foraging</div>
+                            <div className="about-lists"><PhishingIcon className="mr-4" />Fly Fishing</div>
+                            <div className="about-lists"><SelfImprovementIcon className="mr-4" />Acro Yoga</div>
                         </div>
                     </div>
                 </div>

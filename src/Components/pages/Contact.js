@@ -3,10 +3,10 @@ import TextField from '@mui/material/TextField';
 import { validateEmail } from '../../utils/helpers';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import SatelliteIcon from '@mui/icons-material/Satellite'; import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
-import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
+// import SatelliteIcon from '@mui/icons-material/Satellite'; 
+// import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
+// import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/animation_lk1q6wwx.json';
 
@@ -68,30 +68,28 @@ export default function Contact() {
                 <Lottie options={defaultOptions} />
             </div>
 
-            <div className="my-5">
+            <div className="my-24">
                 <div className="grid grid-cols-8 lg:gap-4 gap-1 items-center justify-center h-screen">
                     <div className="lg:col-start-2 lg:col-end-5 md:col-start-2 md:col-end-8 place-self-center col-start-2 col-end-8 my-5 md:mt-2">
                         <div className="mb-5">
-                            <SatelliteIcon fontSize="large" />
-                            <div className="text-2xl font-bold text-slate-700 my-2">Location</div>
-                            <div className="text-xl text-slate-600 ">White Salmon, Washington</div>
+                            <div className="contact-titles">I'm currently coding & playing in</div>
+                            <div className="contact-subtitles">White Salmon, WA</div>
                         </div>
 
                         <div className="mb-5">
-                            <ForwardToInboxIcon fontSize="large" />
-                            <div className="text-2xl font-bold text-slate-700 my-2">Email</div>
-                            <div className="text-xl text-slate-600">Meli.explores@gmail.com</div>
+                            <div className="contact-titles">Give me a ring</div>
+                            <div className="contact-subtitles">+1 540.819.4352</div>
                         </div>
 
-                        <div className="mb-3">
-                            <PhonelinkRingIcon fontSize="large" />
-                            <div className="text-2xl font-bold text-slate-700 my-2">Phone</div>
-                            <div className="text-xl text-slate-600">+1 540.819.4352</div>
+                        <div className="mb-5">
+                            <div className="contact-titles">Shoot me an email</div>
+                            <div className="contact-subtitles">Meli.explores@gmail.com</div>
                         </div>
+
                     </div>
 
                     <div className="contactBox my-4 lg:col-start-5 lg:col-end-8 md:col-start-2 md:col-end-8 col-start-1 col-end-9">
-                        <Paper elevation={3}>
+                        <Paper elevation={3} className="mb-10">
                             <div className="p-3 font-bold text-center text-slate-700 leading-snug md:text-5xl text-4xl">
                                 Let's Connect!
                             </div>
@@ -135,13 +133,12 @@ export default function Contact() {
                                     />
                                 </div>
                                 <div className="p-4">
-                                    <Button onClick={handleFormSubmit} type="button" variant="contained" 
-                                    color="secondary" endIcon={<SendIcon />}>Send</Button>
+                                    <Button className="contact" onClick={handleFormSubmit} type="button" variant="contained" endIcon={<SendIcon />}>Send</Button>
                                 </div>
                             </form>
                         </Paper>
                         {errorMessage && (
-                            <div>
+                            <div className="my-2 text-base sm:text-xl text-slate-700">
                                 <p className="error-text">{errorMessage}</p>
                             </div>
                         )}
