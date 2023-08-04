@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import resume from '../assets/mvaughn_full-stack-resume.pdf';
+import resume from '../downloads/mvaughn_resume.pdf';
 import { deepPurple } from '@mui/material/colors';
 import './css/NavBar.css';
 
@@ -13,7 +12,6 @@ function NavTabs({ currentPage, handlePageChange }) {
 
     const [scrolled, setScrolled] = useState(false);
     const [toggled, setToggled] = useState(false);
-    const [activeLink, setActiveLink] = useState('home');
 
     useEffect(() => {
         const onScroll = () => {

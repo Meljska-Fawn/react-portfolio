@@ -8,7 +8,7 @@ import Paper from '@mui/material/Paper';
 // import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 // import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
 import Lottie from 'react-lottie';
-import animationData from '../../assets/animation_lk1q6wwx.json';
+import animationData from '../../images/animation_lk1q6wwx.json';
 
 const defaultOptions = {
     loop: true,

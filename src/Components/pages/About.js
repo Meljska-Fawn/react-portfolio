@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import profilePhoto from '../../assets/profile-photo_bw.jpeg';
+import profilePhoto from '../../images/profile-photo_bw.jpeg';
 import DownhillSkiingIcon from '@mui/icons-material/DownhillSkiing';
 import KayakingIcon from '@mui/icons-material/Kayaking';
 import DirectionsBikeIcon from '@mui/icons-material/DirectionsBike';
@@ -9,7 +9,7 @@ import PhishingIcon from '@mui/icons-material/Phishing';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import Lottie from 'react-lottie';
-import animationData from '../../assets/animation_lk1q6wwx.json';
+import animationData from '../../images/animation_lk1q6wwx.json';
 
 const defaultOptions = {
     loop: true,

@@ -1,8 +1,8 @@
 {
-    "name": "react-portfolio-website",
+    "name": "react-portfolio",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://Meljska-Fawn.github.io/react-portfolio-website",
+    "homepage": "https://Meljska-Fawn.github.io/react-portfolio",
     "dependencies": {
         "@emotion/react": "^11.11.0",
         "@emotion/styled": "^11.11.0",

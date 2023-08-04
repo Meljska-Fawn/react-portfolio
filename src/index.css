@@ -46,11 +46,6 @@
 
 }
 
-/* .button-style{
-  background-color: rgba(104, 7, 123);
-
-} */
-
 .button-style:hover {
   scale: 1.05;
 }

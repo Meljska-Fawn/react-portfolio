@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Lottie from 'react-lottie';
-import animationData from '../../assets/animation_lk1q6wwx.json';
+import animationData from '../../images/animation_lk1q6wwx.json';
 import { deepPurple } from '@mui/material/colors';
 // import techBlogGif from '../../images/tech-blog.gif';
 import Bloom from '../../images/bloom.png';
